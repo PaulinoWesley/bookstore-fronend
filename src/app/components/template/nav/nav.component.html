@@ -1,20 +1,19 @@
 <mat-sidenav-container class="conteiner">
-  <mat-sidenav mode="side" opened>
-      <mat-nav-list dense>
-          <a mat-list-item >
-              <mat-icon class="mat-18">home</mat-icon>
-              HOME
-          </a>
-          <a mat-list-item href="">
-            <a mat-list-item >
-                <mat-icon class="mat-18">menu_book</mat-icon>
-                Categorias
-            </a>
-          </a>
-      </mat-nav-list>
+  <mat-sidenav class="sideRight" mode="side" opened>
+    <mat-nav-list dense>
+      <a mat-list-item  routerLink="">
+        <mat-icon class="mat-18">home</mat-icon>
+        HOME
+      </a>
+
+      <a mat-list-item routerLink="/categorias">
+        <mat-icon class="mat-18" >menu_book</mat-icon>
+        Categorias
+      </a>
+    </mat-nav-list>
   </mat-sidenav>
 
   <mat-sidenav-content>
-      123456789
+    <router-outlet></router-outlet>
   </mat-sidenav-content>
 </mat-sidenav-container>
