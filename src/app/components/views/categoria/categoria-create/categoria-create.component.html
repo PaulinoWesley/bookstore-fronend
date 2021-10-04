@@ -3,15 +3,15 @@
 
     <mat-form-field class="form">
         <mat-label>Nome</mat-label>
-        <input matInput type="text" name="nome" placeholder="Ex. Computação">
+        <input matInput type="text" name="nome" placeholder="Ex. Computação" [(ngModel)]="categoria.nome">
     </mat-form-field>
     <mat-form-field class="form">
         <mat-label>Descrição</mat-label>
-        <textarea matInput type="text" name="descricao" placeholder="Ex. livros de computação"></textarea>
+        <textarea matInput type="text" name="descricao" placeholder="Ex. livros de computação" [(ngModel)]="categoria.descricao"></textarea>
     </mat-form-field>
 
     <div class="buttons">
-        <button class="mat-elevation-z8" mat-stroked-button color="primary">Confirmar</button>
+        <button class="mat-elevation-z8" mat-stroked-button color="primary" (click)="create()">Confirmar</button>
         <button class="mat-elevation-z8" mat-stroked-button color="warn">Cancelar</button>
     </div>
 </form>
