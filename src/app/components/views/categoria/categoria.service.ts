@@ -16,4 +16,5 @@ export class CategoriaService {
     const url = `${this.baseUrl}/categorias`;
     return this.http.get<Categoria[]>(url);
   }
+  
 }

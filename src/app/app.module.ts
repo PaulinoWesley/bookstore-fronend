@@ -42,4 +42,5 @@ import { MatTableModule } from "@angular/material/table";
   providers: [],
   bootstrap: [AppComponent],
 })
+
 export class AppModule {}
