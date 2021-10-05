@@ -8,6 +8,8 @@ import { CategoriaUpdateComponent } from "./components/views/categoria/categoria
 import { CategoriaDeleteComponent } from "./components/views/categoria/categoria-delete/categoria-delete.component";
 import { CategoriaCreateComponent } from "./components/views/categoria/categoria-create/categoria-create.component";
 import { CategoriaReadComponent } from "./components/views/categoria/categoria-read/categoria-read.component";
+import { LivroUpdateComponent } from './components/views/livro/livro-update/livro-update.component';
+
 const routes: Routes = [
   {
     path: "",
@@ -36,6 +38,10 @@ const routes: Routes = [
   {
     path: "categorias/:id_cat/livros/create",
     component: LivroCreateComponent,
+  },
+  {
+    path: "categorias/:id_cat/livros/:id/update",
+    component: LivroUpdateComponent,
   },
 ];
 
