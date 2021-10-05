@@ -2,9 +2,7 @@
   <div class="title">
     <h1>Categorias</h1>
   </div>
-
-  <button class="mat-elevation-z8" mat-stroked-button color="primary" (click)="navToCatCreate()">NOVA CATEGORIA</button>
-
+  <button class="mat-elevation-z8" mat-stroked-button color="primary" (click)="navToCatCreate()">Criar Categoria</button>
   <div class="mat-elevation-z8">
     <table class="table" mat-table [dataSource]="categorias">
       <!-- Id Column -->
@@ -52,4 +50,5 @@
       <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
     </table>
   </div>
+  <button class="mat-elevation-z8" mat-stroked-button color="primary" (click)="navToHome()">Voltar</button>
 </div>

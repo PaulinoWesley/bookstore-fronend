@@ -30,4 +30,8 @@ export class CategoriaReadComponent implements OnInit {
     this.router.navigate(["categorias/create"]);
   }
 
+  navToHome() {
+    this.router.navigate([""]);
+  }
+
 }

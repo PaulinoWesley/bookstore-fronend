@@ -48,4 +48,9 @@ export class CategoriaDeleteComponent implements OnInit {
   cancel(): void {
     this.router.navigate(["categorias"]);
   }
+
+  navToCategorias() {
+    this.router.navigate(["categorias"]);
+  }
+
 }
