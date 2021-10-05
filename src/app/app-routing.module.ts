@@ -1,3 +1,4 @@
+import { LivroDeleteComponent } from './components/views/livro/livro-delete/livro-delete.component';
 import { LivroCreateComponent } from './components/views/livro/livro-create/livro-create.component';
 import { HomeComponent } from "./components/views/home/home.component";
 import { NgModule } from "@angular/core";
@@ -43,6 +44,10 @@ const routes: Routes = [
     path: "categorias/:id_cat/livros/:id/update",
     component: LivroUpdateComponent,
   },
+  {
+    path: "categorias/:id_cat/livros/:id/delete",
+    component: LivroDeleteComponent,
+  }
 ];
 
 @NgModule({
